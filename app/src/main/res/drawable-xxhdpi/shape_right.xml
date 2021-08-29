@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shadow_right" />
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:bottomLeftRadius="40dp"
+                android:topLeftRadius="40dp" />
+            <gradient
+                android:angle="225"
+                android:centerColor="@color/colorA"
+                android:endColor="@color/colorAA"
+                android:startColor="@color/colorB" />
+        </shape>
+    </item>
+</layer-list>

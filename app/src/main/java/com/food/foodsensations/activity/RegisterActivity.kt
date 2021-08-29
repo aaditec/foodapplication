@@ -39,7 +39,6 @@ class RegisterActivity : AppCompatActivity() {
         edtEnterName = findViewById(R.id.edtEnterName)
         edtEnterEmail = findViewById(R.id.edtEnterEmail)
         edtEnterAddress = findViewById(R.id.edtEnterAddress)
-
         edtEnterMobile = findViewById(R.id.edtEnterMobile)
         btnRegister = findViewById(R.id.btnRegister)
         edtEnterPassword = findViewById(R.id.edtEnterPassword)
