@@ -44,7 +44,7 @@ class RegisterActivity : AppCompatActivity() {
         edtEnterPassword = findViewById(R.id.edtEnterPassword)
         edtEnterConfirmPassword = findViewById(R.id.edtEnterConfirmPassword)
         sharedPrefs = getSharedPreferences(getString(R.string.pref_file_name), Context.MODE_PRIVATE)
-        toolBar = findViewById(R.id.toolbar)
+
         setUpToolbar()
         btnRegister.setOnClickListener {
             btnRegister.visibility = View.GONE
@@ -179,7 +179,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     fun setUpToolbar() {
-        setSupportActionBar(toolBar)
+
         supportActionBar?.title = "Register Yourself"
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
