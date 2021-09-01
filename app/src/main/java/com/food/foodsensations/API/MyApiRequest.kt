@@ -1,4 +1,4 @@
-package com.example.tour_guide_nepal.API
+package com.food.foodsensations.API
 
 import org.json.JSONException
 import org.json.JSONObject

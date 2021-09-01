@@ -1,4 +1,4 @@
-package com.example.tour_guide_nepal.ENTITY
+package com.food.foodsensations.ENTITY
 
 import android.os.Parcel
 import android.os.Parcelable

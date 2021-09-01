@@ -1,4 +1,4 @@
-package com.example.tour_guide_nepal.API
+package com.food.foodsensations.API
 
 import com.example.tour_guide_nepal.ENTITY.User
 import com.example.tour_guide_nepal.Response.LoginResponse
