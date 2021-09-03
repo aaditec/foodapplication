@@ -9,16 +9,17 @@ import androidx.room.PrimaryKey
 data class User(
 
     var _id: String? = null,
-
     var email: String? = null,
     var fullname: String? = null,
     var phone: String? = null,
+    var address: String? = null,
     var password: String? = null
 ): Parcelable {
     @PrimaryKey(autoGenerate = true)
     var userId: Int = 0
 
     constructor(parcel: Parcel) : this(
+        parcel.readString(),
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
@@ -33,6 +34,7 @@ data class User(
         parcel.writeString(email)
         parcel.writeString(fullname)
         parcel.writeString(phone)
+        parcel.writeString(address)
         parcel.writeString(password)
         parcel.writeInt(userId)
     }

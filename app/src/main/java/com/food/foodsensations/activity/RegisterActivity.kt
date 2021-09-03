@@ -6,6 +6,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -16,8 +17,14 @@ import androidx.core.app.ActivityCompat
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
+import com.food.foodsensations.ENTITY.User
 import com.food.foodsensations.R
+import com.food.foodsensations.Repository.UserRepository
 import com.food.foodsensations.util.ConnectionManager
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import org.json.JSONObject
 import java.lang.Exception
 
@@ -47,6 +54,7 @@ class RegisterActivity : AppCompatActivity() {
 
         setUpToolbar()
         btnRegister.setOnClickListener {
+
             btnRegister.visibility = View.GONE
             val name = edtEnterName.text.toString()
             val email = edtEnterEmail.text.toString()
@@ -54,7 +62,81 @@ class RegisterActivity : AppCompatActivity() {
             val address = edtEnterAddress.text.toString()
             val pwd = edtEnterPassword.text.toString()
             val confirmPwd = edtEnterConfirmPassword.text.toString()
+            if (edtEnterEmail.text.toString().isEmpty()) {
+                edtEnterEmail.error = "Please enter email"
+                edtEnterEmail.requestFocus()
 
+            }
+
+            if (!Patterns.EMAIL_ADDRESS.matcher(edtEnterEmail.text.toString()).matches()) {
+                edtEnterEmail.error = "Please enter valid email"
+                edtEnterEmail.requestFocus()
+
+            }
+            if (edtEnterMobile.text.toString().isEmpty()) {
+                edtEnterMobile.error = "Please enter phone number"
+                edtEnterMobile.requestFocus()
+
+            }
+            if (edtEnterName.text.toString().isEmpty()) {
+                edtEnterName.error = "Please enter your full name"
+                edtEnterName.requestFocus()
+
+            }
+            if (edtEnterAddress.text.toString().isEmpty()) {
+                edtEnterAddress.error = "Please enter your Current Address"
+                edtEnterAddress.requestFocus()
+
+            }
+
+            if (edtEnterPassword.text.toString().isEmpty()) {
+                edtEnterPassword.error = "Please enter password"
+                edtEnterPassword.requestFocus()
+
+            }
+            if (pwd != confirmPwd) {
+                edtEnterPassword.error = "Password does not match"
+                edtEnterPassword.requestFocus()
+                return@setOnClickListener
+            } else {
+                val user =
+                    User(
+
+                        fullname = name,
+                        email = email,
+                        phone = phn,
+                        address = address,
+                        password = pwd
+                    )
+                CoroutineScope(Dispatchers.IO).launch {
+                    try {
+                        val userRepository = UserRepository()
+                        val response = userRepository.registerUser(user)
+                        if (response.success == true) {
+                            withContext(Dispatchers.Main) {
+                                Toast.makeText(
+                                    this@RegisterActivity,
+                                    "signup successfully", Toast.LENGTH_SHORT
+
+                                ).show()
+                                getSharedPreferences(
+                                    "shared_preference",
+                                    MODE_PRIVATE
+                                ).edit().putBoolean("isLoggedIn", true).apply()
+                            }
+                        }
+                    } catch (ex: Exception) {
+                        withContext(Dispatchers.Main) {
+                            Toast.makeText(
+                                this@RegisterActivity,
+                                ex.message, Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }
+                }
+
+
+            }
             if ((name == "") || (email == "") || (phn == "") || (address == "") || (pwd == "") || (confirmPwd == "")) {
                 Toast.makeText(this@RegisterActivity, "All Fields Required", Toast.LENGTH_SHORT)
                     .show()
