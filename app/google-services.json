@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "668169956558",
+    "project_id": "myproject1-1aa74",
+    "storage_bucket": "myproject1-1aa74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668169956558:android:ca3e96f2c249fd8c89349f",
+        "android_client_info": {
+          "package_name": "com.casperskee.foodrunner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668169956558-6ufjsvlavhq4qkkhahvv4qiikq7t1k4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9gjlIpUBSG_4MubL4y8xYgi_XNsPPJQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668169956558-6ufjsvlavhq4qkkhahvv4qiikq7t1k4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668169956558:android:c680f50eb597e4e189349f",
+        "android_client_info": {
+          "package_name": "com.food.foodsensations"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668169956558-a58b5df72oqqsaotmkkjl9846ku4sf01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.food.foodsensations",
+            "certificate_hash": "b965e329dc3df65730f2317877e55e90b71b7632"
+          }
+        },
+        {
+          "client_id": "668169956558-6ufjsvlavhq4qkkhahvv4qiikq7t1k4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9gjlIpUBSG_4MubL4y8xYgi_XNsPPJQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668169956558-6ufjsvlavhq4qkkhahvv4qiikq7t1k4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

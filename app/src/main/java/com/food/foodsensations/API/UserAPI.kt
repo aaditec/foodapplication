@@ -1,7 +1,8 @@
 package com.food.foodsensations.API
 
-import com.example.tour_guide_nepal.ENTITY.User
-import com.example.tour_guide_nepal.Response.LoginResponse
+
+import com.food.foodsensations.ENTITY.User
+import com.food.foodsensations.Response.LoginResponse
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.Field

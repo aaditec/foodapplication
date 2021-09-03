@@ -2,9 +2,11 @@
   <library name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar">
     <CLASSES>
       <root url="file://$APPLICATION_HOME_DIR$/plugins/gradle/gradle-6.8.3-all/caches/transforms-2/files-2.1/17e688fffcf742db2042a024f6473e19/lifecycle-livedata-core-2.0.0/res" />
-      <root url="jar://$APPLICATION_HOME_DIR$/plugins/gradle/gradle-6.8.3-all/caches/transforms-2/files-2.1/44ef4df19767b293c35f90c613f47ed9/lifecycle-livedata-core-2.0.0/jars/classes.jar!/" />
-      <root url="file://$APPLICATION_HOME_DIR$/plugins/gradle/gradle-6.8.3-all/caches/transforms-2/files-2.1/44ef4df19767b293c35f90c613f47ed9/lifecycle-livedata-core-2.0.0/AndroidManifest.xml" />
       <root url="file://$APPLICATION_HOME_DIR$/plugins/gradle/gradle-6.8.3-all/caches/transforms-2/files-2.1/44ef4df19767b293c35f90c613f47ed9/lifecycle-livedata-core-2.0.0/res" />
+      <root url="file://$APPLICATION_HOME_DIR$/plugins/gradle/gradle-6.8.3-all/caches/transforms-3/4e952424a10e0d46136e40b008f26ac5/transformed/lifecycle-livedata-core-2.0.0/res" />
+      <root url="file://$APPLICATION_HOME_DIR$/plugins/gradle/gradle-6.8.3-all/caches/transforms-3/3e6ff8e0de7788a7ee517ba3eed5a241/transformed/lifecycle-livedata-core-2.0.0/res" />
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/gradle/gradle-6.8.3-all/caches/transforms-3/3e6ff8e0de7788a7ee517ba3eed5a241/transformed/lifecycle-livedata-core-2.0.0/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/plugins/gradle/gradle-6.8.3-all/caches/transforms-3/3e6ff8e0de7788a7ee517ba3eed5a241/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
