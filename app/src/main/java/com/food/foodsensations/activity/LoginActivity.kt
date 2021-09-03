@@ -13,8 +13,15 @@ import androidx.core.app.ActivityCompat
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
+import com.food.foodsensations.API.ServiceBuilder
 import com.food.foodsensations.R
+import com.food.foodsensations.Repository.UserRepository
 import com.food.foodsensations.util.ConnectionManager
+import com.google.android.material.snackbar.Snackbar
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import org.json.JSONException
 import org.json.JSONObject
 import com.food.foodsensations.activity.RegisterActivity as RegisterActivity
@@ -25,6 +32,7 @@ class LoginActivity : AppCompatActivity() {
     lateinit var edtMobileNumber: EditText
     lateinit var edtPassword: EditText
     lateinit var btnLogin: Button
+    private lateinit var linearLayout: LinearLayout
     lateinit var progressBarLogin: ProgressBar
     lateinit var sharedPrefs: SharedPreferences
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,6 +68,58 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnLogin.setOnClickListener {
+            if (validateLogin()) {
+                val email = edtMobileNumber.text.toString()
+                val password = edtPassword.text.toString()
+                CoroutineScope(Dispatchers.IO).launch {
+                    try {
+                        val repository = UserRepository()
+                        val response = repository.loginUser(email, password)
+                        if (response.success == true) {
+                            ServiceBuilder.token = "Bearer " + response.token
+
+
+
+                            startActivity(
+                                Intent(
+                                    this@LoginActivity,
+                                    MainActivity::class.java
+                                )
+                            )
+                            withContext(Dispatchers.Main) {
+                                Toast.makeText(
+                                    this@LoginActivity,
+                                    "Login Successfully",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                            finish()
+                        } else {
+                            withContext(Dispatchers.Main) {
+                                val snack =
+                                    Snackbar.make(
+                                        linearLayout,
+                                        "Invalid credentials",
+                                        Snackbar.LENGTH_LONG
+                                    )
+                                snack.setAction("OK", View.OnClickListener {
+                                    snack.dismiss()
+                                })
+                                snack.show()
+                            }
+                        }
+
+                    } catch (ex: Exception) {
+                        withContext(Dispatchers.Main) {
+                            Toast.makeText(
+                                this@LoginActivity,
+                                ex.message, Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }
+                }
+
+            }
             btnLogin.visibility = View.GONE
             progressBarLogin.visibility = View.VISIBLE
             val queue = Volley.newRequestQueue(this@LoginActivity)
@@ -73,9 +133,7 @@ class LoginActivity : AppCompatActivity() {
                         val data = it.getJSONObject("data")
                         val success = data.getBoolean("success")
                         try {
-
                             if (success) {
-
                                 val userInfoJSONObject = data.getJSONObject("data")
                                 sharedPrefs.edit().putString(
                                     "user_id",
@@ -158,6 +216,26 @@ class LoginActivity : AppCompatActivity() {
                 dialog.show()
             }
         }
+
+    }
+    private fun sanitize(input: EditText): String {
+        return input.text.toString().trim(' ')
+    }
+    private fun validateLogin(): Boolean {
+        var valid = true
+        edtMobileNumber.error = null
+        edtMobileNumber.error = null
+
+        if (sanitize(edtMobileNumber as EditText).isEmpty()) {
+            edtMobileNumber.error = "email can not be empty"
+            valid = false
+        }
+        if (sanitize(edtPassword as EditText).isEmpty()) {
+            edtPassword.error = "Password can not be empty"
+            valid = false
+        }
+
+        return valid
 
     }
 
