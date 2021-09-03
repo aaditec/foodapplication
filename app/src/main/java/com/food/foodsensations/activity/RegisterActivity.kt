@@ -26,7 +26,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
-import java.lang.Exception
+
 
 class RegisterActivity : AppCompatActivity() {
     lateinit var txtRegisterBack: TextView
