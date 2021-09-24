@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FoodRunner.iml" filepath="$PROJECT_DIR$/.idea/FoodRunner.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FoodRunner.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FoodRunner.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Yemilicious_Pot.iml" filepath="$PROJECT_DIR$/.idea/modules/Yemilicious_Pot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Yemilicious_Pot.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Yemilicious_Pot.app.iml" />
     </modules>
   </component>
 </project>

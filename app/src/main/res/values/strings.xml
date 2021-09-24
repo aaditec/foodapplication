@@ -1,80 +1,98 @@
 <resources>
-    <string name="app_name">Food Application</string>
-    <string name="open_drawer">Open Drawer</string>
-    <string name="close_drawer">Close Drawer</string>
-    <string name="message">FoodSensation</string>
-
-    <string name="sign_up">Don\'t have an account? Sign up now</string>
-    <string name="mobile_number">Mobile Number(10 digits)</string>
-
-
-    <string name="email">Email</string>
-    <string name="Address">Address</string>
-    <string name="password">Password</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="login">LOGIN Form</string>
-    <string name="client_logo">LOGO</string>
-    <string name="FullName">FullName</string>
-    <string name="login_now">SIGN IN</string>
-    <string name="not_a_member">Not a member</string>
-    <string name="signup">SIGN UP</string>
-    <string name="forgot_password">Forgot Password?</string>
-    <string name="new_account">Don\'t have an account?</string>
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="name_of_restaurants">Name of Restaurants</string>
-    <string name="_200_person">Rs. 200/person</string>
-    <string name="_4_5">4.5</string>
-    <string name="todo">TODO</string>
-    <string name="_200">200</string>
-    <string name="_">Rs.</string>
-    <string name="_person">/person</string>
-    <string name="register_yourself">Register Yourself</string>
-    <string name="enter_name">Name(Min. 3 characters)</string>
-    <string name="enter_email">Email Address</string>
-    <string name="enter_mobile">Mobile Number (10 digits)</string>
-    <string name="enter_address">Delivery Address</string>
-    <string name="enter_password">Password (6 characters)</string>
-    <string name="enter_cnfpassword">Confirm Password</string>
-    <string name="register_button">Register</string>
-    <string name="pref_file_name">FoodrunnerPreferences</string>
-    <string name="statement_forgot">Enter your registered mobile number and email below:</string>
-    <string name="next">NEXT</string>
+    <string name="app_name">Food Order and Delivery</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email Address</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login">Login</string>
+    <string name="please_sign_in_to_continue">Please sign in to continue</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_an_account">Create An <br />Account</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
     <string name="name">Name</string>
-    <string name="mobile">Mobile</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="name_required">First Name is required!</string>
+    <string name="phone_number_required">Phone Number is required!</string>
+    <string name="email_address_required">Email address is required!</string>
+    <string name="password_required">Password is required!</string>
+    <string name="password_length">Password must be greater than %1$d</string>
+    <string name="password_no_match">Passwords do not match</string>
+    <string name="password_retype_required">Password Retype is required!</string>
+    <string name="login_error">Invalid Credentials. Please try again!</string>
+    <string name="title_activity_setup">Setup</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
 
-    <string name="address">Address</string>
-    <string name="otp_4_char">OTP (4 characters)</string>
-    <string name="new_password">"New Password (6 characters) "</string>
-    <string name="cnf_pass">Confirm Password</string>
-    <string name="submit">Submit</string>
-    <string name="choose_from_menu_listed_below">Choose from menu listed below:</string>
-    <string name="rs">Rs.</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="what_would_you_like_to_do">What would you like to do?</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="finish">Finish</string>
+    <string name="fill_in_the_information_below_to_complete_setup">Fill in the information below to complete setup</string>
+    <string name="shop_address">Shop Address</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="one_more_step">One more step…</string>
+    <string name="login_to_continue">Please login to continue…</string>
+    <string name="select_role">Select Role</string>
+    <string name="home_address">Home Address</string>
+    <string name="profile_update_success">User profile updated successfully!</string>
+    <string name="shop_update_success">Shop updated successfully!</string>
+    <string name="title_activity_seller_dashboard">Seller\'s Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_my_orders">My Orders</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="no_seller_food_added">No Food Added Yet. <br /> Click the <b>\"+\"</b> button above to add food to your restaurant</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="no_order_yet">No Order Yet</string>
+    <string name="upload_image">Upload Image</string>
     <string name="food_name">Food Name</string>
-    <string name="faq_answer_one">A.1 Order is deliverd by our dedicated delivery boys.
-    </string>
-    <string name="faq_answer_two">A.2 We are on 24*7.
-    </string>
-    <string name="faq_answer_four">A.4 You can only cancel your order till the restaurant not accepted your order,if you cancel after the accepted there is no refund given to you.
-    </string>
-    <string name="faq_answer_three">A.3 Our maximum delivery time is one hour if we can not do that you will got 50% cashback .</string>
-    <string name="faq_answer_five">A.5 You can pay online(upi,wallet etc) or you can opt for cash on delivery.
-    </string>
-    <string name="faq_answer_six">A.6 You can write us a mail on @support.foodsensations .
-    </string>
-    <string name="add">ADD</string>
-    <string name="proceed_to_cart">Proceed to cart</string>
-    <string name="enter_the_received_otp_below">Enter the received OTP below</string>
-    <string name="sort">action_sort</string>
-    <string name="remove">Remove</string>
-    <string name="food_item">Food Item</string>
-    <string name="ordering_from">Ordering From :</string>
-    <string name="ok">Ok</string>
-    <string name="your_order_has_been_successfully_placed">Your order has been successfully placed!</string>
-    <string name="you_do_not_have_any_favorite_restaurants">You do not have any favorite restaurants</string>
-    <string-array name="sorting_option">
-        <item>Cost(Low to High)</item>
-        <item>Cost(High to Low)</item>
-        <item>Rating</item>
-    </string-array>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="image_of_food">Image of the food</string>
+    <string name="save">Save</string>
+    <string name="add_food">Add Food</string>
+    <string name="edit_food">Edit Food</string>
+    <string name="food_name_required">Food name is required!</string>
+    <string name="food_price_required">Food price is required!</string>
+    <string name="food_desc_required">Food description is required!</string>
+    <string name="food_image_required">Food Image is required!</string>
+    <string name="invalid_food_price">Invalid food price</string>
+    <string name="food_price_naira">RS.%1$s</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_buyers_dashboard">Choose A Restaurant To Buy Food…</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="order_food">Order Food</string>
+    <string name="choose_a_restaurant_to_buy_food">Choose A Restaurant To Buy Food</string>
+    <string name="select_food_make_order">Select A Meal To Make An Order</string>
+    <string name="order_completed_success">Order completed successfully!</string>
+    <string name="view_food">View Food</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="ok">OK</string>
+    <string name="my_orders">My Orders</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="cancel">Cancel</string>
+    <string name="order_cancelled_success">Order cancelled successfully!</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="delivered">delivered</string>
+    <string name="order_customer_name"><b>Customer Name:</b> %1$s</string>
+    <string name="order_customer_address"><b>Address:</b> %1$s</string>
+    <string name="order_customer_phone"><b>Phone Number:</b> %1$s</string>
+    <string name="order_status_updated_success">Order status updated successfully!</string>
+    <string name="no_foods_available">Sorry, but there are no foods available in this restaurant.
+        <br />You can try another one!</string>
 </resources>

@@ -1,2 +1,2 @@
-rootProject.name='FoodRunner'
 include ':app'
+rootProject.name = "Yemilicious Pot"

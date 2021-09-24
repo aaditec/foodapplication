@@ -1,50 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#000000</color>
-    <color name="colorPrimaryDark">#4C4949</color>
-    <color name="colorAccent">#ED1F10</color>
-    <color name="color_favourite">#F62B1D</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
 
+    <color name="purple_900">#4a148c</color>
+    <color name="primary">#9C27B0</color>
+    <color name="primary_dark">#7B1FA2</color>
+    <color name="primary_light">#E1BEE7</color>
+    <color name="accent">#E040FB</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
 
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
 
-
-    <color name="white">#FFFFFF</color>
-    <color name="transparent">#00000000</color>
-    <color name="gradStart">#91eae4</color>
-    <color name="gradMid">#86a8e7</color>
-    <color name="gradStop">#7f7fd5</color>
-
-
-    <color name="colorA">#fc6e51</color>
-    <color name="colorAA">#e9573f</color>
-
-    <color name="colorB">#ffce54</color>
-    <color name="colorBB">#f68b42</color>
-
-    <color name="colorC">#a0d468</color>
-    <color name="colorCC">#8cc152</color>
-
-    <color name="colorD">#509cec</color>
-    <color name="colorDD">#4a89dc</color>
-
-    <color name="colorE">#ac92ec</color>
-    <color name="colorEE">#967adc</color>
-
-    <color name="colorF">#48cfad</color>
-    <color name="colorFF">#37bc9b</color>
-
-    <color name="colorG">#4fc1e9</color>
-    <color name="colorGG">#3bafda</color>
-
-    <color name="colorH">#ec87c0</color>
-    <color name="colorHH">#d770ad</color>
-
-    <color name="colorI">#18FFFF</color>
-    <color name="colorII">#00E5FF</color>
-
-    <color name="colorJ">#64FFDA</color>
-    <color name="colorJJ">#1DE9B6</color>
-
-    <color name="drakBlue">#000029</color>
-    <color name="colorBlack">#000000</color>
+    <color name="yellow">#FFC107</color>
 </resources>
