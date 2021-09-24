@@ -1,4 +1,6 @@
 <resources>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
     <string name="app_name">Food Order and Delivery</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email Address</string>
