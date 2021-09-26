@@ -55,7 +55,7 @@
     <string name="title_home">Home</string>
     <string name="title_my_orders">My Orders</string>
     <string name="title_notifications">Notifications</string>
-    <string name="no_seller_food_added">No Food Added Yet. <br /> Click the <b>\"+\"</b> button above to add food to your restaurant</string>
+    <string name="no_seller_food_added">No Food Added Yet. <b>\"+\"</b> Click the <br /> button above to add food to your restaurant</string>
     <string name="reject">Reject</string>
     <string name="accept">Accept</string>
     <string name="no_order_yet">No Order Yet</string>

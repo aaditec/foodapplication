@@ -6,7 +6,10 @@ plugins {
     id 'androidx.navigation.safeargs'
 
 }
-
+configurations {
+    cleanedAnnotations
+    compile.exclude group: 'org.jetbrains' , module:'annotations'
+}
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -57,6 +60,8 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.room:room-common:2.3.0'
+    implementation 'androidx.room:room-compiler:2.3.0'
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -68,5 +73,22 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-firestore-ktx'
     implementation 'com.google.firebase:firebase-storage-ktx'
+
+
+    //rounded image view
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //Kotlin Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1-native-mt'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1-native-mt'
+
+    //Retrofit and GSON
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
 
 }
