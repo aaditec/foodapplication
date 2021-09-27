@@ -4,6 +4,7 @@ plugins {
     id 'com.google.gms.google-services'
     id 'kotlin-android-extensions'
     id 'androidx.navigation.safeargs'
+    id 'kotlin-kapt'
 
 }
 configurations {
@@ -89,6 +90,9 @@ dependencies {
     //Retrofit and GSON
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    kapt 'com.github.bumptech.glide:compiler:4.4.0'
 
 
 }
