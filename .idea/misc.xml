@@ -9,14 +9,18 @@
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1125" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/drawable/ic_tune_black_24dp.xml" value="0.1125" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_buyers_dashboard.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_forgotpassword.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_register.xml" value="0.22994652406417113" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_setup.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/fragment_display_shops.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/fragment_profile_setup.xml" value="0.8709677419354839" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/fragment_role_setup.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/shops_list.xml" value="0.18" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/menu/main_menu.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/menu/menu_drawer.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/menu/menu_home.xml" value="0.15" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/menu/seller_menu.xml" value="0.20416666666666666" />
