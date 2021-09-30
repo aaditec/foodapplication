@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/drawable/gradient_contact.xml" value="0.1109375" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/drawable/gradient_login.xml" value="0.11944444444444445" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/drawable/gradient_loginback.xml" value="0.10520833333333333" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/drawable/gradient_signupback.xml" value="0.20185185185185187" />
@@ -12,15 +13,24 @@
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_forgotpassword.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_profile.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_rateapp.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_register.xml" value="0.22994652406417113" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_seller_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_setup.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/activity_termsandservice.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/content_buyers_dashboard.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/fragment_display_shops.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/fragment_profile_setup.xml" value="0.8709677419354839" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/fragment_role_setup.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/nav_header.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/layout/shops_list.xml" value="0.18" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/menu/buyer_menu.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/menu/main_menu.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/menu/menu_drawer.xml" value="0.1" />
         <entry key="..\:/Users/aaditya/StudioProjects/foodapplication1/app/src/main/res/menu/menu_home.xml" value="0.15" />
